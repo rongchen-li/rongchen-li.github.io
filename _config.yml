@@ -4,12 +4,12 @@ theme: jekyll-theme-tactile
 # Social integration
 # -----------------------------------------------------------------------------
 
-# twitter_username: giuliaguidi
-# linkedin_username: giulia-guidi # your LinkedIn user name
-github_username: filippopalomba
-google_analytics: G-FY2E2C6851
-# scholar_userid: UZLC4TYAAAAJ # your Google Scholar ID
-orcid_id: 0000-0002-6400-3142 # your ORCID ID
+twitter_username: # your twitter user name
+linkedin_username: # your LinkedIn user name
+github_username: rongchen-li
+google_analytics: # what is google analytics
+scholar_userid:  # your Google Scholar ID
+orcid_id:  # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
