@@ -8,7 +8,22 @@
 <meta name="description" content="Personal web repository for Rongchen Li." />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" type="image/x-icon" href="graphics/cbs.png", sizes="16x16">
-
+<style>
+    .hidden-text {
+        display: none;
+    }
+    .show-more-btn {
+        cursor: pointer;
+        background-color: rgba(12, 0, 25, 0.1); /*transparent;*/
+        border: none;
+        font-family: Andale Mono, sans-serif;
+        font-size: 12px;
+        color: #0c0019;
+        /* text-decoration: underline; */
+        padding: 5px 8px;  /* Padding to make the button larger */
+        border-radius: 12px; /* Rounded corners */
+    }
+</style>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -49,7 +64,7 @@
           <!--
           <h4><a href="docs/Cingano-Palomba-Pinotti-Rettore_2023_subsidies_main.pdf" target="_blank"><i>"<code>Making Subsidies Work: Rules vs. Discretion</code>"</i></a></h4> -->
           <!--<i>"Intermediaries and Emissions Disclosure"</i>-->
-          <h4><i>"<code>Intermediaries and Emissions Disclosure</code>"</i></a></h4>
+          <h4><i>"<code>Intermediaries and Emission Disclosures</code>"</i></a></h4>
           <b>Committee Members:</b> 
           <a href="https://thomasbourveau.github.io/index.html" target="_blank">Thomas Bourveau</a> (co-chair), 
           <a href="https://business.columbia.edu/faculty/people/jonathan-glover" target="_blank">Jonathan Glover</a> (co-chair), 
@@ -65,6 +80,26 @@
           <!-- Bullet Points Section -->
           <ul>
             <li>Presented at CBS Brown Bag (2024), 2024 AAA/Deloitte Foundation/J. Michael Cook Doctoral Consortium, CBS x MSCI Research Summit.</li>
+            <li> Abstract.
+              <span id="moreText" class="hidden-text"> <br> I examine the impact of information intermediaries' emission estimates on firms' emission disclosures.  Information intermediaries increasingly provide estimates of firms' emissions derived from statistical models that are trained on information from disclosing firms.  I develop an analytical framework to study the impact of such estimates.  In my model, investors penalize firms with high emissions, firms with high emissions abstain from disclosure, and the intermediary's estimates neglect firms' selection into disclosures. The intermediary's estimates underestimate firms' emissions because its statistical model is trained on a self-selected sample of lower-emitting firms that <i>choose</i> to disclose.  The biased emission estimates, in turn, deter firms' emission disclosures if at least some investors naively rely on these estimates.  I provide empirical support for my model's building blocks: investors penalize firms' emissions, higher-emitting firms abstain from disclosure, and intermediaries produce biased estimates.  Exploiting the expansion of a major intermediary as shock to the presence of intermediary estimates, I also document evidence consistent with my model's main prediction: intermediaries' emission estimates deter firms' emission disclosures.  Informed by my model and the data, I discuss potential consequences of refining intermediaries' estimates and the complementary roles between intermediaries and disclosure mandates.</span>
+
+              <button id="expandBtn" class="show-more-btn">Show more</button>
+
+              <script>
+                  const expandBtn = document.getElementById('expandBtn');
+                  const moreText = document.getElementById('moreText');
+
+                  expandBtn.addEventListener('click', function () {
+                      if (moreText.classList.contains('hidden-text')) {
+                          moreText.classList.remove('hidden-text');
+                          expandBtn.innerText = 'Show less';
+                      } else {
+                          moreText.classList.add('hidden-text');
+                          expandBtn.innerText = 'Show more';
+                      }
+                  });
+              </script>
+            </li>
           </ul>
         </div>
       </li><br>         
