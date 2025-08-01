@@ -121,10 +121,10 @@ img.right {
 
 #profile-pic {
   position: absolute;
-  right: 0; /* Align the image to the right */
-  width: 100px; /* Make the image bigger */
+  right: 10px; /* Align the image to the right */
+  width: 200px; /* Make the image bigger */
   height: auto;
-  top: 50%; /* Align the image vertically */
+  top: 60%; /* Align the image vertically */
   transform: translateY(-50%); /* Adjust the position to be centered vertically */ 
 }
 
